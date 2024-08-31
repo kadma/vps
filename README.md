@@ -1,8 +1,14 @@
-# vps
-funciones para vps rapidas
+## Herramientas para vps recien creados
 
+a la hora de crear una vps no tengas que instalar todo a mano
 
+#### instala docker
+```sh
 bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/install-docker.sh)"
+```
 
 
+#### instala docker y portainer
+```sh
 bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocker%2Bportainer.sh)"
+```
