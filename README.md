@@ -14,7 +14,7 @@ bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2B
 ```
 
 
-#### instala docker + portainer + easypanel
+#### instala docker + easypanel
 ```sh
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocekr%2Bportainer%2Beasypanel.sh)"
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocker%2Beasypanel.sh)"
 ```
