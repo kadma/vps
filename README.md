@@ -18,3 +18,8 @@ bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2B
 ```sh
 bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocker%2Beasypanel.sh)"
 ```
+
+#### instala mkvtoolnix + qbittorrent + freedownloadmanager
+```sh
+bash -c "$(wget -qLO - )"
+```
