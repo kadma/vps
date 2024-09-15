@@ -21,5 +21,5 @@ bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2B
 
 #### instala mkvtoolnix + qbittorrent + freedownloadmanager
 ```sh
-bash -c "$(wget -qLO - )"
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bmkvtoolnix%2Bqbittorrent%2Bfreedownloadmanager.sh)"
 ```
