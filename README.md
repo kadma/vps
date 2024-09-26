@@ -2,24 +2,7 @@
 
 a la hora de crear una vps no tengas que instalar todo a mano
 
-#### instala docker
+#### instalador
 ```sh
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/install-docker.sh)"
-```
-
-
-#### instala docker + portainer
-```sh
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocker%2Bportainer.sh)"
-```
-
-
-#### instala docker + easypanel
-```sh
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocker%2Beasypanel.sh)"
-```
-
-#### instala mkvtoolnix + qbittorrent + freedownloadmanager
-```sh
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bmkvtoolnix%2Bqbittorrent%2Bfreedownloadmanager.sh)"
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/instalador.sh)"
 ```
