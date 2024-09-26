@@ -35,7 +35,7 @@ docker_easypanel() {
 
 docker_aapanel() {
     echo "Instalando Docker Y Aapanel"
-    sudo bash -c "$(wget -qLO - )"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/nuevo%2Bdocker%2Baapanel.sh)"
 }
 
 docker_cyberpanel() {
