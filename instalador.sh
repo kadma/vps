@@ -1,10 +1,4 @@
 #!/bin/bash
-if ! command -v wget &> /dev/null; then
-        echo "'wget' no está instalado. Instalándolo..."
-        sudo apt update && sudo apt install wget -y
-    else
-        echo "'wget' ya está instalado."
-fi
 clear
 
 # Función para mostrar el menú
@@ -15,9 +9,10 @@ mostrar_menu() {
     echo "1. docker"
     echo "2. docker + portainer"
     echo "3. docker + easypanel"
-    echo "4. docker + cyberpanel"
-    echo "5. mkvtoolnix + qbittorrent + freedownloadmanager"
-    echo "6. Salir"
+    echo "4. docker + aapanel"
+    echo "5. docker + cyberpanel"
+    echo "6. mkvtoolnix + qbittorrent + freedownloadmanager"
+    echo "7. Salir"
     echo "------------------------"
 }
 
@@ -38,9 +33,14 @@ docker_easypanel() {
     sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocker%2Beasypanel.sh)"
 }
 
+docker_aapanel() {
+    echo "Instalando Docker Y Aapanel"
+    sudo bash -c "$(wget -qLO - )"
+}
+
 docker_cyberpanel() {
     echo "Instalando Docker Y Cyber Panel"
-    sudo bash -c "$(wget -qLO - )"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/nuevo%2Bdocker%2Bcyberpanel.sh)"
 }
 
 mkv_qbit_fdm() {
@@ -53,7 +53,7 @@ mkv_qbit_fdm() {
 # Ciclo principal
 while true; do
     mostrar_menu
-    read -p "Selecciona una opción (1-6): " opcion
+    read -p "Selecciona una opción (1-7): " opcion
     case $opcion in
         1)
             solo_docker
@@ -65,12 +65,15 @@ while true; do
             docker_easypanel
             ;;
         4)
-            docker_cyberpanel
+            docker_aapanel
             ;;
         5)
-            mkv_qbit_fdm
+            docker_cyberpanel
             ;;
         6)
+            mkv_qbit_fdm
+            ;;
+        7)
             clear
             echo "Chau"
             exit 0
