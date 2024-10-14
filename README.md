@@ -1,5 +1,5 @@
-[!NOTE]
-Esta en desarollo y pueden fallar cosas
+> [!NOTE]
+> Esta en desarollo y pueden fallar cosas
 
 ## Herramientas para vps recien creados
 
