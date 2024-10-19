@@ -9,7 +9,8 @@ mostrar_menu() {
     echo "1. docker"
     echo "2. bashrc"
     echo "3. firefox fix"
-    echo "4. mkvtoolnix + qbittorrent + freedownloadmanager"
+    echo "4. portainer update"
+    echo "5. mkvtoolnix + qbittorrent + freedownloadmanager"
     echo "q. Salir"
     echo "------------------------"
 }
@@ -31,6 +32,11 @@ firefox_fix() {
     sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/herramientas/firefox%20fix.sh)"
 }
 
+portainer_update() {
+    echo "Actualizando el portainer."
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/herramientas/portainer%20update.sh)"
+}
+
 mkv_qbit_fdm() {
     echo "Instalando Mkvtoolnix, qbittorrent y FreeDownloadManager"
     sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/herramientas/nuevo%2Bmkvtoolnix%2Bqbittorrent%2Bfreedownloadmanager.sh)"
@@ -41,7 +47,7 @@ mkv_qbit_fdm() {
 # Ciclo principal
 while true; do
     mostrar_menu
-    read -p "Selecciona una opción (1-4) o q para salir: " opcion
+    read -p "Selecciona una opción (1-5) o q para salir: " opcion
     case $opcion in
         1)
             solo_docker
@@ -53,6 +59,9 @@ while true; do
             firefox_fix
             ;;
         4)
+            portainer_update
+            ;;
+        5)
             mkv_qbit_fdm
             ;;
         q)
