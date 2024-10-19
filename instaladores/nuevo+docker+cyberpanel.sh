@@ -14,8 +14,4 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 apt update && apt upgrade -y && apt autoremove -y
 # instala el Cyber Panel
-sh <(curl https://cyberpanel.net/install.sh || wget -O - https://cyberpanel.net/install.sh)
-docker_easypanel() {
-    echo "Instalando Docker Y Easy Panel"
-    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocker%2Beasypanel.sh)"
-}
+sudo su - -c "sh <(curl https://cyberpanel.net/install.sh || wget -O - https://cyberpanel.net/install.sh)"
