@@ -1,8 +1,8 @@
 #!/bin/bash
-clear
 
 # Función para mostrar el menú
 mostrar_menu() {
+    clear
     echo "------------------------"
     echo "   MENU DE INSTALACION"
     echo "------------------------"
@@ -45,15 +45,19 @@ while true; do
     case $opcion in
         1)
             docker_potainer
+            exit 0
             ;;
         2)
             docker_easypanel
+            exit 0
             ;;
         3)
             docker_aapanel
+            exit 0
             ;;
         4)
             docker_cyberpanel
+            exit 0
             ;;
         q)
             clear
