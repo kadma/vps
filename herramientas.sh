@@ -1,8 +1,8 @@
 #!/bin/bash
-clear
 
 # Función para mostrar el menú
 mostrar_menu() {
+    clear
     echo "------------------------"
     echo "   MENU DE INSTALACION"
     echo "------------------------"
