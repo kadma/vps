@@ -7,9 +7,9 @@ mostrar_menu() {
     echo "   MENU DE INSTALACION"
     echo "------------------------"
     echo "1. docker"
-    echo "1. firefox fix"
-    echo "1. bashrc"
-    echo "2. mkvtoolnix + qbittorrent + freedownloadmanager"
+    echo "2. bashrc"
+    echo "3. firefox fix"
+    echo "4. mkvtoolnix + qbittorrent + freedownloadmanager"
     echo "q. Salir"
     echo "------------------------"
 }
@@ -18,12 +18,22 @@ mostrar_menu() {
 # Zona de Funcionse
 solo_docker() {
     echo "Instalando Docker"
-    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/install-docker.sh)"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/herramientas/install-docker.sh)"
+}
+
+bashrc() {
+    echo "Instalando Docker"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/herramientas/bashrc.sh)"
+}
+
+firefox_fix() {
+    echo "Arreglando Firefox."
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/herramientas/firefox%20fix.sh)"
 }
 
 mkv_qbit_fdm() {
     echo "Instalando Mkvtoolnix, qbittorrent y FreeDownloadManager"
-    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bmkvtoolnix%2Bqbittorrent%2Bfreedownloadmanager.sh)"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/herramientas/nuevo%2Bmkvtoolnix%2Bqbittorrent%2Bfreedownloadmanager.sh)"
 }
 
 
@@ -36,7 +46,13 @@ while true; do
         1)
             solo_docker
             ;;
-        5)
+        2)
+            bashrc
+            ;;
+        3)
+            firefox_fix
+            ;;
+        4)
             mkv_qbit_fdm
             ;;
         q)

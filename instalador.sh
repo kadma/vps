@@ -18,22 +18,22 @@ mostrar_menu() {
 # Zona de Funcionse
 docker_potainer() {
     echo "Instalando Docker y Portanier"
-    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocker%2Bportainer.sh)"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/instaladores/nuevo%2Bdocker%2Bportainer.sh)"
 }
 
 docker_easypanel() {
     echo "Instalando Docker Y Easy Panel"
-    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/nuevo%2Bdocker%2Beasypanel.sh)"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/instaladores/nuevo%2Bdocker%2Beasypanel.sh)"
 }
 
 docker_aapanel() {
     echo "Instalando Docker Y Aapanel"
-    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/nuevo%2Bdocker%2Baapanel.sh)"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/instaladores/nuevo%2Bdocker%2Baapanel.sh)"
 }
 
 docker_cyberpanel() {
     echo "Instalando Docker Y Cyber Panel"
-    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/nuevo%2Bdocker%2Bcyberpanel.sh)"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/instaladores/nuevo%2Bdocker%2Bcyberpanel.sh)"
 }
 
 
