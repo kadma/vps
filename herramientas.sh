@@ -4,7 +4,7 @@
 mostrar_menu() {
     clear
     echo "------------------------"
-    echo "   MENU DE INSTALACION"
+    echo "  MENU DE HERRAMIENTAS "
     echo "------------------------"
     echo "1. docker"
     echo "2. bashrc"
