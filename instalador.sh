@@ -41,7 +41,7 @@ docker_cyberpanel() {
 # Ciclo principal
 while true; do
     mostrar_menu
-    read -p "Selecciona una opción (1-7): " opcion
+    read -p "Selecciona una opción (1-4) o q para salir: " opcion
     case $opcion in
         1)
             docker_potainer
