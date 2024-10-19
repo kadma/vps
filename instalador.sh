@@ -10,6 +10,7 @@ mostrar_menu() {
     echo "2. docker + easypanel"
     echo "3. docker + aapanel"
     echo "4. docker + cyberpanel"
+    echo "5. docker + cosmos"
     echo "q. Salir"
     echo "------------------------"
 }
@@ -36,12 +37,16 @@ docker_cyberpanel() {
     sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/instaladores/nuevo%2Bdocker%2Bcyberpanel.sh)"
 }
 
+docker_cosmos() {
+    echo "Instalando Docker Y Cosmos"
+    sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/instaladores/nuevo%2Bdocker%2Bcosmos.sh)"
+}
 
 
 # Ciclo principal
 while true; do
     mostrar_menu
-    read -p "Selecciona una opción (1-4) o q para salir: " opcion
+    read -p "Selecciona una opción (1-5) o q para salir: " opcion
     case $opcion in
         1)
             docker_potainer
@@ -57,6 +62,10 @@ while true; do
             ;;
         4)
             docker_cyberpanel
+            exit 0
+            ;;
+        5)
+            docker_cosmos
             exit 0
             ;;
         q)
