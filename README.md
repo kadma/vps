@@ -7,5 +7,10 @@ a la hora de crear una vps no tengas que instalar todo a mano
 
 #### instalador
 ```sh
-curl -fsSL https://raw.githubusercontent.com/kadma/vps/main/instalador.sh | bash
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/instalador.sh)"
+```
+
+#### herramientas
+```sh
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/main/herramientas.sh)"
 ```
