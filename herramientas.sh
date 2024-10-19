@@ -22,7 +22,7 @@ solo_docker() {
 }
 
 bashrc() {
-    echo "Instalando Docker"
+    echo "Agregando comandos a bashrc"
     sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/kadma/vps/refs/heads/main/herramientas/bashrc.sh)"
 }
 
